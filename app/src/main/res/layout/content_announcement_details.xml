@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.app.classdiary.announcement.AnnouncementDetails"
+    tools:showIn="@layout/activity_announcement_details">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/txt_detsil"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:padding="16dp"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

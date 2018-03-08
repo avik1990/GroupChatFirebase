@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\ClassDiary\\lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\ClassDiary\\lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "3,4,5",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "260,308,354",
+                        "endLines": "3,4,14",
+                        "endColumns": "47,45,12",
+                        "endOffsets": "303,349,837"
+                    }
+                }
+            ]
+        }
+    ]
+}

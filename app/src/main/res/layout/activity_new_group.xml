@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/custom_actionbar_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/prl_subject"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:background="#90CAF9">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/img_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_camera_alt_black_24dp" />
+        </android.support.percent.PercentRelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_view">
+
+            <EditText
+                android:id="@+id/et_group_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Type group title here"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <EditText
+                android:id="@+id/et_group_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_group_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:hint="Type group subject here"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <EditText
+                android:id="@+id/et_group_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_group_sub"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Select Expiry Date"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <CheckBox
+                android:id="@+id/chk_visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_group_date"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#FFFFFF"
+                android:visibility="gone"
+                android:drawablePadding="5dp"
+                android:button="@null"
+                android:text="Visible to non-members"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+    </android.support.percent.PercentRelativeLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prl_subject"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_memcount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Members: 5"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_memcount"
+        android:layout_marginTop="10dp"
+        android:divider="@null"
+        android:padding="10dp"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        app:reverseLayout="false" />
+</android.support.percent.PercentRelativeLayout>

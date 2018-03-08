@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "394930435164",
+    "firebase_url": "https://classdiary-d6dea.firebaseio.com",
+    "project_id": "classdiary-d6dea",
+    "storage_bucket": "classdiary-d6dea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394930435164:android:8e25aba957019669",
+        "android_client_info": {
+          "package_name": "com.app.classdiary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394930435164-rvv24vuvkg1qd52s4nce3nv0ebapls6v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLHO8vZ2cHBqKq-R8aVfQ6qQEJ24LkO2w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
